@@ -6,5 +6,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
 });
 
+app.use(express.static('public'));
+
 app.listen(8000, () => 
 console.log('Levantando un servidor con Express'));
