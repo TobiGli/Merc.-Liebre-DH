@@ -155,14 +155,60 @@ footer i{
 /* Body // Main // article */
 
 .encabezado {
+    display: block;
     font-size: 24px;
     margin-top: 0px;
-    display: block;
     width: 80%;
     margin: 0px auto;
     padding: 10px;
     align-items: center;
 }
+
+/* items de los productos, caja de los productos e img en general */
+
+.products{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product__img {
+    display: block;
+    width: 10px;
+
+}
+
+.product__description {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.product__description--logoTruck {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+
+.product__description--Flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.product__description--price{
+    font-size: 18px;
+    width: 30vw;
+}
+
+.product__description--discount{
+    width: 70vw;
+}
+
+
 
 /* pie de pagina */
 
@@ -196,7 +242,8 @@ footer i{
     } 
 
     .navbar {
-        display: block;
+        display: flexbox;
+        flex-direction: row;
         }
 
     .enlaces__header {
@@ -209,6 +256,8 @@ footer i{
     }
 
     .product__img , .product__description{ 
+        width: 90vw;
+        margin-left: 5%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100)
     }
 
@@ -255,21 +304,28 @@ footer i{
 
     .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: start;
+        justify-content: space-around;
     }
 
     .enlaces__header {
         display: flex;
-        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .centrado__header {
         display: flex;
         align-items: center;
+        justify-content: space-around;
+        border-spacing: 10%;
     }
 
     .product__img , .product__description{ 
+        width: 90vw;
+        margin-left: 5%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 

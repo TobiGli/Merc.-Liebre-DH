@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(8000, () => 
-console.log('Levantando un servidor con Express'));
+console.log('esta ready y flama para usar'));
