@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="/css/form_styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,107 +14,55 @@
     <link rel="stylesheet" href="/css/normalize.css">
 </head>
 <body>
-  <header>
-    <div class="logoYsearchYcompra">
-      <div class="logoYSearch">
-          <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logoeimg"><a href="/views/home.html"></a></a>
-          <section>
-              <search class ="header__searchBar1">Lugar para poner la barra de busqueda</search>
-              <span class="header__searchBar2"><i class="fa-solid fa-magnifying-glass"></i></span>
-          </section>
-      </div>
-      <div>
-          <section class="header__centered centrado__header"> 
-              <i class="fa-solid fa-hand-holding-dollar">Compra en cuotas y sin tarjeta de credito</i> 
-          </section>
-      </div>
-      </div>
-  </div>
-  <div>
-      <nav class="navbar">
-          <div>
-              <ul class="enlaces__header">
-                  <li><a href="">Ofertas</a></li>
-                  <li><a href="">Tiendas Oficiales </a></li>
-                  <li><a href="">Vender</a></li> 
-                  <li><a href="">Ayuda</a></li>
-              </ul>
-          </div>
-          <br>
-          <div>
-              <ul class="enlaces__header">
-                  <li><a href="/views/login.html">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
-                  <li><a href="">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
-                  <li><a href="">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
-              </ul>
-          </div>
-          <div class="header__burger-menu">
-              <i class="fas fa-bars"></i>
-          </div>
-      </div>
-  </nav>
-  <img src="img\img-home-banner.jpg" alt="" class="header__banner">
-  </header>
-
-    <form action="/my-handling-form-page" method="post"  class="form">
-        <ul>
-          <li>
-            <input type="text" id="name" name="user_name" placeholder="Nombre y apellido"/>
-          </li>
-          <li>
-            <input type="text" id="name" name="user_name" placeholder="Nombre de usuario"/>
-          </li><li>
-            <input type="email" id="mail" name="user_mail"placeholder="E-mail" />
-          </li>
-          <li>
-            <h4>Fecha de nacimiento</h4>
-            <input type="date" name="datetime" id="datetime" />
-          </li>
-          <li>
-            <input type="text" id="name" name="user_name" placeholder="Domicilio"/>
-          </li>          
-        <li>
-            <h4>Perfil de usuario</h4>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Comprador</label>
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Vendedor</label>
+    <header>
+        <div class="logoYsearchYcompra">
+            <div class="logoYSearch">
+                <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logoeimg">
+                <section>
+                    <search class ="header__searchBar1">Lugar para poner la barra de busqueda</search>
+                    <span class="header__searchBar2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </section>
             </div>
-        </li>
-   <div>
-    <h4>Intereses</h4>
-          <li>
-            <label for="scales">Electro</label> 
-            <input type="checkbox" id="scales" name="scales"  />
-           </li>
-           <li>
-            <label for="scales">Moda</label> 
-            <input type="checkbox" id="scales" name="scales"  />
-           </li>
-           <li>
-            <label for="scales">Hogar</label> 
-            <input type="checkbox" id="scales" name="scales"  />
-           </li>
-           <li>
-            <label for="scales">Juguetería</label> 
-            <input type="checkbox" id="scales" name="scales"  />
-           </li>
-           <li>
-            <label for="scales">Vida sana</label> 
-            <input type="checkbox" id="scales" name="scales"  />
-           </li>
-
-           <form class="form__contraseña">
-            <input  class="input" type="text" id="name" name="user_name" placeholder="Nombre de usuario"/>
-            <input class="input" type="password" placeholder="Elegí tu contraseña"/>
-            <input  class="input submit" type="submit" />
-        </form>
+            <div>
+                <section class="header_centered centrado_header"> 
+                    <i class="fa-solid fa-hand-holding-dollar">Compra en cuotas y sin tarjeta de credito</i> 
+                </section>
+            </div>
+            </div>
         </div>
+        <div>
+            <nav class="navbar">
+                <div>
+                    <ul class="enlaces__header">
+                        <li><a href="">Ofertas</a></li>
+                        <li><a href="">Tiendas Oficiales </a></li>
+                        <li><a href="">Vender</a></li> 
+                        <li><a href="">Ayuda</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <ul class="enlaces__header">
+                        <li><a href="/views/register.html">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+                        <li><a href="/views/login.html">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                        <li><a href="">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                    </ul>
+                </div>
+                <div class="header__burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <img src="img\img-home-banner.jpg" alt="" class="header__banner">
+    </header>
 
-        </ul>
-      </form>
-      <footer>
+    <form class="form__contraseña">
+        <input  class="input" type="text" id="nombredeusuario" name="nombredeusuario" placeholder="Nombre de usuario"/>
+        <input class="input" type="password" id="contraseña" name="contraseña" placeholder="Contraseña"/>
+        <input  class="input submit" type="submit" />
+    </form>
+
+    <footer>
 
         <br>
 
@@ -154,7 +102,6 @@
             </section>
         </div>    
     </footer>
-</body>
-</html>
+
 </body>
 </html>
