@@ -16,5 +16,5 @@ app.get('/views/register.html', (req, res) => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3030, () => 
-console.log('esta ready y flama para usar'));
+const port = process.env.PORT || 3001;
+app.listen(port, () => console.log(`Servidor corriendo en el puerto ${port}`));
