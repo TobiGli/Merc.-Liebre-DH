@@ -12,48 +12,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/normalize.css">
 </head>
+
 <body>
+
     <header>
-        <div class="logoYsearchYcompra">
-            <div class="logoYSearch">
-                <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logoeimg">
-                <section>
-                    <search class ="header__searchBar1">Lugar para poner la barra de busqueda</search>
-                    <span class="header__searchBar2"><i class="fa-solid fa-magnifying-glass"></i></span>
-                </section>
+        <div class="main-header-top-bar">
+            <img class="header-logo" src="/images/logo-mercado-liebre.svg" alt="logo Mercado Liebre"/>
+            <div class="header-search">
+                <form action="/" method="GET">
+                    <input type="text" name="searchbar" placeholder="Buscar productos, marcas y más"> <button
+                        type="submit"><i class="fas fa-search"></i></button>
+                </form>
             </div>
-            <div>
-                <section class="header__centered centrado__header"> 
-                    <i class="fa-solid fa-hand-holding-dollar">Compra en cuotas y sin tarjeta de credito</i> 
-                </section>
-            </div>
-            </div>
-        </div>
-        <div>
-            <nav class="navbar">
-                <div>
-                    <ul class="enlaces__header">
-                        <li><a href="">Ofertas</a></li>
-                        <li><a href="">Tiendas Oficiales </a></li>
-                        <li><a href="">Vender</a></li> 
-                        <li><a href="">Ayuda</a></li>
-                    </ul>
-                </div>
-                <br>
-                <div>
-                    <ul class="enlaces__header">
-                        <li><a href="/views/register.html">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
-                        <li><a href="/views/login.html">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
-                        <li><a href="">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
-                    </ul>
-                </div>
-                <div class="header__burger-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
+        </div> 
+        <p class="payment-header">  <i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de crédito</p> 
+        
+        <nav>
+            <ul class="header-nav">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="header-nav">
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
         </nav>
-        <img src="img\img-home-banner.jpg" alt="" class="header__banner">
-    </header>
+    
+            <div class="header-burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+       </header>
+       <div class="banner"> <img width="100%" height="100%" src=".\images\img-home-banner.jpg" alt="Banner publicitario"></div>
+
     <main>
         <section>
             <h3 class="encabezado">Basado en tu última visita</h3>
